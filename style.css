@@ -1,0 +1,45 @@
+#menu {
+    background-color: #192436;
+    border: solid white 5px;
+    
+   
+}
+
+ul, ul li{      
+    text-align: center;
+    display: block; 
+    list-style:none;      
+    margin-top: 50px; 
+    margin-bottom: 20px;     
+    padding: 4px;
+    
+    
+} 
+
+ul li{
+    text-align: center;
+     display: inline-block; 
+ 
+}
+
+ ul a:link, ul a:visited{     
+      text-align: center;
+      text-decoration:none;          
+      color:white;     
+      padding: 20px 50px;   
+}        
+      
+
+ul a:hover {     
+        border-style: inset;     
+        color:green;     
+    }
+
+
+    #logo
+    {
+       width: 7%;
+       margin-left: 735px;
+       
+       
+    }
