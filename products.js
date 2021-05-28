@@ -17,6 +17,10 @@ class Product
 
 }
 
+function addProduct() {
+    
+}
+
 function pokaz()
 {
     for(let i=0; i<Product_table.length; i++)
