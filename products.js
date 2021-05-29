@@ -1,6 +1,7 @@
 
 //tablica obiektów
 
+
 var Product_table =[p1, p2];
 
 //clasa Product opisująca właściwości produktu
@@ -17,8 +18,10 @@ class Product
 
 }
 
-function addProduct() {
-    
+function addProduct() 
+{
+    var p = new Product("Zioło", "Zioło o smaku lemon haze", 50 , "icons/cytrynowa_mgieka.jpg", 1);
+    Product_table[Product_table.length + 1] = p; 
 }
 
 function pokaz()
@@ -35,5 +38,9 @@ var p1 = new Product("Zioło", "Zioło o smaku lemon haze", 50 , "icons/cytrynow
 var p2 = new Product("kwas", "niezłe kwasidło", 70, "icons/icon_weed.png", 1);
 
 var Product_table =[p1, p2];
+
+pokaz();
+
+addProduct();
 
 pokaz();
