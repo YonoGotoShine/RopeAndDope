@@ -1,4 +1,4 @@
-/*
+
 //tablica obiektów
 
 
@@ -44,6 +44,5 @@ pokaz();
 addProduct();
 
 pokaz();
-*/
 
-document.write("działasz?")
+
