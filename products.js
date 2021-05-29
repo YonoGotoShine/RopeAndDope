@@ -1,9 +1,4 @@
 
-//tablica obiektów
-
-
-var Product_table =[p1, p2];
-
 //clasa Product opisująca właściwości produktu
 class Product
 {
@@ -18,12 +13,23 @@ class Product
 
 }
 
+//funkcja dodająca produkty do tablicy produktów
 function addProduct() 
 {
-    var p = new Product("Zioło", "Zioło o smaku lemon haze", 50 , "icons/cytrynowa_mgieka.jpg", 1);
-    Product_table[Product_table.length + 1] = p; 
+    let p = new Product("Zioło5345", "Zioło o smaku lemon haz34252345e", 504535 , "icons/cytrynowa_mgieka.jpg", 1);
+    Product_table[Product_table.length] = p; 
 }
 
+/*
+function delProduct() 
+{
+    prompt(del);
+
+    Product_table[del].pop();
+}
+*/
+
+//funkcja pokazująca tablice
 function pokaz()
 {
     for(let i=0; i<Product_table.length; i++)
@@ -37,12 +43,26 @@ var p1 = new Product("Zioło", "Zioło o smaku lemon haze", 50 , "icons/cytrynow
 
 var p2 = new Product("kwas", "niezłe kwasidło", 70, "icons/icon_weed.png", 1);
 
+
+//tablica obiektów
 var Product_table =[p1, p2];
 
 pokaz();
 
+document.write("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>")
 addProduct();
 
-pokaz();
+pokaz()
+
+document.write("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>")
+
+
+
+
+
+
+
+
+
 
 
