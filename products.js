@@ -14,11 +14,16 @@ class Product
 }
 
 //funkcja dodająca produkty do tablicy produktów
+
+/*
 function addProduct() 
 {
-    let p = new Product(id="fname", id="fdes", id="fprice", id="fimg", id="fcategory");
+    let p = new Product(document.getElementById("fname"), id="fdes", id="fprice", id="fimg", id="fcategory");
     Product_table[Product_table.length] = p; 
+    pokaz();
+    document.write("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br><br><br>");
 }
+*/
 
 /*
 function delProduct() 
@@ -38,6 +43,12 @@ function pokaz()
     }
 }
 
+function test() 
+{
+    var g = document.getElementById("gtest");
+    
+    document.write(g);
+}
 
 var p1 = new Product("Zioło", "Zioło o smaku lemon haze", 50 , "icons/cytrynowa_mgieka.jpg", 1);
 
@@ -47,14 +58,9 @@ var p2 = new Product("kwas", "niezłe kwasidło", 70, "icons/icon_weed.png", 1);
 //tablica obiektów
 var Product_table =[p1, p2];
 
-pokaz();
 
-document.write("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>")
-addProduct();
 
-pokaz()
 
-document.write("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>")
 
 
 
