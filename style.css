@@ -1,9 +1,27 @@
 #menu {
     background-color: #192436;
     border: solid white 5px;
+    display: block; 
+    border-style: ridge;  
     
-   
 }
+
+#gora{
+    border: solid white;
+    display: block; 
+    border-style: ridge;   
+    
+}
+
+
+#promocje{
+    border: solid white;
+    display: block; 
+    border-style: ridge;   
+
+}
+
+
 
 ul, ul li{      
     text-align: center;
@@ -12,8 +30,7 @@ ul, ul li{
     margin-top: 50px; 
     margin-bottom: 20px;     
     padding: 4px;
-    
-    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 } 
 
 ul li{
