@@ -16,7 +16,7 @@ class Product
 //funkcja dodająca produkty do tablicy produktów
 function addProduct() 
 {
-    let p = new Product("Zioło5345", "Zioło o smaku lemon haz34252345e", 504535 , "icons/cytrynowa_mgieka.jpg", 1);
+    let p = new Product(id="fname", id="fdes", id="fprice", id="fimg", id="fcategory");
     Product_table[Product_table.length] = p; 
 }
 
