@@ -83,10 +83,8 @@ dodaj_produkt("kwas", "niezłe kwasidło", 30, "icons/icon_weed.png", 2);
 dodaj_produkt("kwa5423543s", "niezłe kwasidło", 790, "icons/icon_weed.png", 1);
 dodaj_produkt("inny kwas", "niezłe kwasidło", 70, "icons/icon_weed.png", 1);  
 
+sortuj(2)
 
-sortuj(1);
-
-pokaz(1);
 
 
 
