@@ -4,12 +4,14 @@
     display: block; 
     border-style: ridge;  
     
+    
 }
 
 #gora{
     border: solid white;
     display: block; 
     border-style: ridge;   
+    height: 50px;
     
 }
 
@@ -55,7 +57,7 @@ ul a:hover {
 
 #logo
 {
-    width: 7%;
+    width: 3%;
     margin-left: 735px;
        
        
