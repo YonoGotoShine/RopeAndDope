@@ -38,7 +38,7 @@ dodaj_kategorie("promocje", 0);
 pokaz_kategorie();
 
 dodaj_kategorie("promocje", 1);
-pokaz_kategorie();-
+pokaz_kategorie();
 
 
 
