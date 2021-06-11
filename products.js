@@ -40,8 +40,6 @@ function dodaj_produkt(name, description, price, img, id_category)
     let p = new Product(name, description, price , img, id_category);
 
     Product_table[Product_table.length] = p;
-
-    localStorage.setItem("tablica_p", Product_table)
     
 }
 
