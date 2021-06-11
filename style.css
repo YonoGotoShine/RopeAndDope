@@ -24,7 +24,7 @@
      
 
 }
-    
+
 
 #kontakt{
     color: white;
@@ -77,6 +77,13 @@ ul a:hover {
 
 #obok
 {
-    color: red;
-    padding-left: 500px;
+    color: white;
+    padding-right:380px;
+    text-align: center;
+}
+
+#zdjecie{
+    text-align: center;
+    padding-right:380px ;
+
 }
