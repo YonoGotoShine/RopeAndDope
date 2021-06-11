@@ -27,7 +27,7 @@ function pokaz(categoria)
     {
         if(categoria == Product_table[i].id_category)
         {
-            document.write("Nazwa: " + Product_table[i].name + " Opis: " + Product_table[i].description + " Cena: " + Product_table[i].price +" obrazek: " + "<img src=" + Product_table[i].img + ">" + " Kategoria: " + Product_table[i].id_category + " Id: " + Product_table[i].id +"<br>")
+            document.write("<img src=" + Product_table[i].img + "> "+"Nazwa: " + Product_table[i].name +" Opis: " + Product_table[i].description + " Cena: " + Product_table[i].price +  "<br><br><br>")
         }
 
     }
@@ -46,10 +46,9 @@ function dodaj_produkt(name, description, price, img, id_category)
 }
 
 
-
 dodaj_produkt("Zioło", "Zioło o smaku lemon haze", 50 , "icons/cytrynowa_mgieka.jpg", 1);
 
-dodaj_produkt("kwas", "niezłe kwasidło", 70, "icons/icon_weed.png", 2);
+dodaj_produkt("kwas", "niezłe kwasidło", 30, "icons/icon_weed.png", 2);
 
 dodaj_produkt("kwa5423543s", "niezłe kwasidło", 70, "icons/icon_weed.png", 1);
 dodaj_produkt("kwa5423543s", "niezłe kwasidło", 70, "icons/icon_weed.png", 1);
@@ -57,6 +56,7 @@ dodaj_produkt("kwa5423543s", "niezłe kwasidło", 70, "icons/icon_weed.png", 1);
 
 
 pokaz(1);
+
 
 
 
