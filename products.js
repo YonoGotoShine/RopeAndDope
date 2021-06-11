@@ -52,9 +52,6 @@ dodaj_produkt("kwa5423543s", "niezłe kwasidło", 70, "icons/icon_weed.png", 1);
 
 
 
-
-document.write(localStorage.getItem("tablica_p"))
-
 pokaz();
 
 
