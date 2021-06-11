@@ -1,3 +1,9 @@
+//tablica kategori;
+
+
+
+
+var l = 0;
 
 class Category
 {
