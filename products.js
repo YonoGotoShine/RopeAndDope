@@ -21,11 +21,15 @@ class Product
 
 
 //funkcja pokazująca tablice
-function pokaz()
-{
+function pokaz(categoria)
+{  
     for(let i=0; i<Product_table.length; i++)
     {
-        document.write("Nazwa: " + Product_table[i].name + " Opis: " + Product_table[i].description + " Cena: " + Product_table[i].price +" obrazek: " + "<img src=" + Product_table[i].img + ">" + " Kategoria: " + Product_table[i].id_category + " Id: " + Product_table[i].id +"<br>")
+        if(categoria == Product_table[i].id_category)
+        {
+            document.write("Nazwa: " + Product_table[i].name + " Opis: " + Product_table[i].description + " Cena: " + Product_table[i].price +" obrazek: " + "<img src=" + Product_table[i].img + ">" + " Kategoria: " + Product_table[i].id_category + " Id: " + Product_table[i].id +"<br>")
+        }
+
     }
 }
 
@@ -52,7 +56,7 @@ dodaj_produkt("kwa5423543s", "niezłe kwasidło", 70, "icons/icon_weed.png", 1);
 
 
 
-pokaz();
+pokaz(1);
 
 
 
