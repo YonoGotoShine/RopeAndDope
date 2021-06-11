@@ -27,7 +27,7 @@ function pokaz(categoria)
     {
         if(categoria == Product_table[i].id_category)
         {
-            document.write('<div id="zdjecie"><img src=' + Product_table[i].img + '></div><div id="obok"> '+'<p>Nazwa: ' + Product_table[i].name +' Opis: ' + Product_table[i].description +'<br>'+' Cena: ' + Product_table[i].price +'zł'+  '</div><br><br><br>')
+            document.write('<div id="zdjecie"><img src=' + Product_table[i].img + '></div><div id="obok"> '+'<p>Nazwa: ' + Product_table[i].name +' Opis: ' + Product_table[i].description +'<br>'+' Cena: '+ Product_table[i].price +'zł'+  '</div><br><br><br>')
         }
 
     }
@@ -44,12 +44,12 @@ function dodaj_produkt(name, description, price, img, id_category)
 }
 
 
-dodaj_produkt("Zioło", "Zioło o smaku lemon haze", 50 , "icons/cytrynowa_mgieka.jpg", 1);
+dodaj_produkt("Zioło", "Zioło o smaku lemon haze",  '<s>100zł</s> ' +50 , "icons/cytrynowa_mgieka.jpg", 1);
 
 dodaj_produkt("kwas", "niezłe kwasidło", 30, "icons/icon_weed.png", 2);
 
-dodaj_produkt("kwa5423543s", "niezłe kwasidło", 70, "icons/icon_weed.png", 1);
-dodaj_produkt("kwa5423543s", "niezłe kwasidło", 70, "icons/icon_weed.png", 1);  
+dodaj_produkt("kwa5423543s", "niezłe kwasidło", '<s>105zł</s> ' + 70, "icons/icon_weed.png", 1);
+dodaj_produkt("kwa5423543s", "niezłe kwasidło", '<s>130zł</s> '+65, "icons/icon_weed.png", 1);  
 
 
 

@@ -3,7 +3,7 @@
     border: solid white 5px;
     
     border-style: ridge;  
-    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
 }
 
@@ -12,7 +12,7 @@
     display: block; 
     border-style: ridge;   
     height: 50px;
-    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
@@ -71,7 +71,7 @@ ul a:hover {
 {
     width: 3%;
     margin-left: 735px;
-       
+
        
 }
 
@@ -80,10 +80,18 @@ ul a:hover {
     color: white;
     padding-right:380px;
     text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #zdjecie{
     text-align: center;
     padding-right:380px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+}
+
+#regulamin{
+    color: white;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
