@@ -1,7 +1,7 @@
 #menu {
     background-color: #192436;
     border: solid white 5px;
-    display: block; 
+    
     border-style: ridge;  
     
     
@@ -17,9 +17,16 @@
 
 
 #promocje{
-    border: solid white;
-    display: block; 
-    border-style: ridge;   
+     
+
+}
+
+#kontakt{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+
+    
 
 }
 
