@@ -21,15 +21,16 @@ class Product
 
 
 //funkcja pokazująca tablice
-function pokaz(categoria)
-{  
+function pokaz(categoria, sort)
+{
+    sortuj(sort);
+
     for(let i=0; i<Product_table.length; i++)
     {
         if(categoria == Product_table[i].id_category)
         {
             document.write('<div class="produkt"><div id="zdjecie"><img src=' + Product_table[i].img + '></div><div id="obok"> '+'<p>Nazwa: ' + Product_table[i].name +' Opis: ' + Product_table[i].description +'<br>'+' Cena: '+ Product_table[i].price +'zł'+  '</div><br><br><br></div>')
         }
-
     }
 }
 
@@ -59,6 +60,7 @@ function sortuj(n)
                 }
             }
         }
+        localStorage.setItem("sort", 1);
     }
     if(n == 2)
     {
@@ -74,6 +76,7 @@ function sortuj(n)
                 }
             }
         }
+        localStorage.setItem("sort", 2);
     }
 }
 
@@ -83,7 +86,7 @@ dodaj_produkt("kwas", "niezłe kwasidło", 30, "icons/icon_weed.png", 2);
 dodaj_produkt("kwa5423543s", "niezłe kwasidło", 790, "icons/icon_weed.png", 1);
 dodaj_produkt("inny kwas", "niezłe kwasidło", 70, "icons/icon_weed.png", 1);  
 
-sortuj(2)
+
 
 
 
