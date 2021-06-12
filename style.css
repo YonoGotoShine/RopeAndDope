@@ -100,4 +100,5 @@ ul a:hover {
 {
     border: green 5px solid;
     margin-right: 500px;
+    border-style: ridge;  
 }
