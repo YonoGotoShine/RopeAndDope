@@ -1,13 +1,13 @@
-var c = 2;
-
-
-localStorage.setItem("category", c);
-
-document.write(localStorage.getItem("category"))
-
-pokaz(localStorage.getItem("category"))
-
-zmiensort()
+/*
+function zmiensort()
 {
-    
+    var c = prompt(c);
+    localStorage.setItem("c", c);
+    location.reload();
+    document.location.reload(true)
 }
+
+
+
+console.log(parseInt(localStorage.getItem("c")))
+*/

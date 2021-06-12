@@ -8,8 +8,8 @@
     <a href="test.html"></a>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icons/logo.ico">
-    <script src="products.js">window.onload(localStorage.setItem("category", 1))</script>
-
+    <script src="products.js"></script>
+    <script src="config.js"></script>
 
 </head>
 <body style="background-color: #192436;">
@@ -44,12 +44,14 @@
     <br>
     <br>
     <br>
-    <button onclick="sortuj(1)">Rosnąco</button>
-    <button onclick="sortuj(2)">Malejąco</button>
+    <button onclick="sortuj(1), refresh()">Rosnąco</button>
+    <button onclick="sortuj(2), refresh()">Malejąco</button>
     <div id="promocje">
         
         <h1 style="color: red;text-align: center;margin-right: 380px;">Wszystko przecenione na -50%<br>________________________________________</h1>
-        <script>pokaz(1)</script>
+        <script>
+            pokaz(1, localStorage.getItem("sort"));
+        </script>
         
 
     </div>
