@@ -1,6 +1,7 @@
 //tablica obiektów
 var Product_table =[];
 
+//licznik produktow
 var l = 0;
 
 //clasa Product opisująca właściwości produktu
@@ -43,6 +44,7 @@ function dodaj_produkt(name, description, price, img, id_category)
     l++;
 }
 
+//algorytm sortujący gdzue 1 to rosnącą a 2 to malejący
 function sortuj(n)
 {
     if(n == 1)
@@ -79,36 +81,11 @@ function sortuj(n)
     }
 }
 
-
+//Produkty
 dodaj_produkt("Zioło", "Zioło o smaku lemon haze", 50 , "icons/cytrynowa_mgieka.jpg", 1);
 dodaj_produkt("kwas", "niezłe kwasidło", 30, "icons/icon_weed.png", 2);
 dodaj_produkt("kwa5423543s", "niezłe kwasidło", 790, "icons/icon_weed.png", 1);
 dodaj_produkt("inny kwas", "niezłe kwasidło", 70, "icons/icon_weed.png", 1);  
-
-
-console.log("Id:"+Product_table[0].id);
-console.log(Product_table[1].id);
-console.log(Product_table[2].id);
-console.log(Product_table[3].id);
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
 
 
 

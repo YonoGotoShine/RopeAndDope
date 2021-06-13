@@ -1,3 +1,4 @@
+//funkcja do odświeżania strony
 function refresh()
 {
     document.location.reload(true);
@@ -30,27 +31,25 @@ function showCart()
     }
     
 }
-
+//Dodawanie produktu do koszyka(Przypisane do guzików)
 function addToCart(id_produktu)
 {
-
-
     let k = id_produktu
     cart[cart.length] = k;
     ilosc_produktow++;
     localStorage.setItem("Koszyk", cart)
     alert("dodano do koszyka");
     refresh();
-
-
 }
 
+//Czyści local storage, więc czyści też koszyk
 function clearCart()
 {
        localStorage.clear();
        refresh();
 }
 
+//wyświetla cene
 function cena()
 {
     document.write('W koszyku znajdują się zakupy za ' + suma + 'zł');
