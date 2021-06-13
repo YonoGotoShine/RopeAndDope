@@ -87,8 +87,10 @@ dodaj_produkt("kwa5423543s", "niezłe kwasidło", 790, "icons/icon_weed.png", 1)
 dodaj_produkt("inny kwas", "niezłe kwasidło", 70, "icons/icon_weed.png", 1);  
 
 
-
+console.log(Product_table[0].id);
+console.log(Product_table[1].id);
 console.log(Product_table[2].id);
+console.log(Product_table[3].id);
 
 
 
