@@ -37,11 +37,10 @@ function pokaz(categoria, sort)
 //Dodaj Produkt
 function dodaj_produkt(name, description, price, img, id_category) 
 { 
-    l++;
-    let p = new Product(name, description, price , img, id_category);
-
-    Product_table[Product_table.length] = p;
     
+    let p = new Product(name, description, price , img, id_category);
+    Product_table[Product_table.length] = p;
+    l++;
 }
 
 function sortuj(n)
@@ -87,7 +86,7 @@ dodaj_produkt("kwa5423543s", "niezłe kwasidło", 790, "icons/icon_weed.png", 1)
 dodaj_produkt("inny kwas", "niezłe kwasidło", 70, "icons/icon_weed.png", 1);  
 
 
-console.log(Product_table[0].id);
+console.log("Id:"+Product_table[0].id);
 console.log(Product_table[1].id);
 console.log(Product_table[2].id);
 console.log(Product_table[3].id);
