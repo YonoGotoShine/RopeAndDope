@@ -4,34 +4,61 @@ function refresh()
 }
 
 //tablica koszyk
-var cart = [];
 
-var Produkty_w_koszyku = 0;
+var cart = [localStorage.getItem("Koszyk")];
 
-localStorage.setItem("ilosc_produktow", Produkty_w_koszyku);
+var ilosc_produktow = 0;
 
-//localStorage.getItem("ilosc_produktow", Produkty_w_koszyku)
+var suma = 0;
 
 //zrób aby ładnie się wyświetlało
 function showCart()
 {
-    for(var i=0; i<4; i++)
+
+    for(let i=0; i<localStorage.getItem("Koszyk").length; i++)
     {
-        if(localStorage.getItem("PWK" + i) == Product_table[i].id)
+        for(let j=0; j<Product_table.length; j++)
         {
-            document.write('<div class="produkt"><div id="zdjecie"><img src=' + Product_table[i].img + '></div><div id="obok"> '+'<p>Nazwa: ' + Product_table[i].name +' Opis: ' + Product_table[i].description +'<br>'+' Cena: '+ Product_table[i].price +'zł'+  '</div><br><br><br></div>')
+            if(localStorage.getItem("Koszyk")[i] == Product_table[j].id)
+            {
+                document.write('<div class="produkt"><div id="zdjecie"><img src=' + Product_table[j].img + '></div><div id="obok"> '+'<p>Nazwa: ' + Product_table[j].name +' Opis: ' + Product_table[j].description +'<br>'+' Cena: '+ Product_table[j].price +'zł'+  '</div><br><br><br></div>')
+
+                suma = suma + Product_table[j].price;
+            }
         }
+        
     }
+    
 }
 
 function addToCart(id_produktu)
 {
-    localStorage.setItem("PWK" + localStorage.getItem("ilosc_produktow"), id_produktu);
-    Produkty_w_koszyku = localStorage.getItem("ilosc_produktow");
-    Produkty_w_koszyku ++;
-    localStorage.setItem("ilosc_produktow", Produkty_w_koszyku);
+
+
+    let k = id_produktu
+    cart[cart.length] = k;
+    ilosc_produktow++;
+    localStorage.setItem("Koszyk", cart)
     alert("dodano do koszyka");
     refresh();
+
+
 }
 
-console.log(localStorage.getItem("PWK0"));
+function clearCart()
+{
+       localStorage.clear();
+       refresh();
+}
+
+function cena()
+{
+    document.write('W koszyku znajdują się zakupy za ' + suma + 'zł');
+}
+
+
+
+
+
+
+
