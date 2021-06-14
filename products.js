@@ -83,11 +83,15 @@ function sortuj(n)
 
 //Produkty
 dodaj_produkt("Zioło", "Zioło o smaku lemon haze", 50 , "icons/cytrynowa_mgieka.jpg", 1);
-dodaj_produkt("kwas", "niezłe kwasidło", 30, "icons/icon_weed.png", 2);
 dodaj_produkt("kwa5423543s", "niezłe kwasidło", 790, "icons/icon_weed.png", 1);
 dodaj_produkt("inny kwas", "niezłe kwasidło", 70, "icons/icon_weed.png", 1);  
-
-
-
-
+dodaj_produkt("Maseczka", "Maseczka na czasy covidu", 15, "icons/nowosci/maseczka.jpg", 2);
+dodaj_produkt("Nerka", "Gdy masz jedna nerke mozesz tez ubrac ta", 15, "icons/nowosci/nerka.jpg", 2);
+dodaj_produkt("Plecak", "Nowy rok tusz tusz zakup nowy plecak", 15, "icons/nowosci/plecak.jpg", 2);
+dodaj_produkt("Bluza", "Bluza na zimne dni", 150, "icons/Ubrania/bluza.jpg", 3);
+dodaj_produkt("Koszulka", "Koszulka na ciepłe dni", 100, "icons/Ubrania/koszulka.jpg", 3);
+dodaj_produkt("Spodnie", "Klasyczne najlepsze spodnie", 15, "icons/Ubrania/spodnie.jpg", 3);
+dodaj_produkt("Brązoletka", "Taka fajna nie zaduza może być", 25, "icons/akcesoria/brazoletka.jpg", 4);
+dodaj_produkt("Breloczek", "Do auta do rowera i do wszystkiego",10, "icons/akcesoria/breloczek.jpg", 4);
+dodaj_produkt("Powerbank", "Naładuje twój telefon do 5 razy", 55, "icons/akcesoria/powerbank.jpg", 4);
 

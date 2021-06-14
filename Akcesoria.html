@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icons/logo.ico">
     <script src="products.js"></script>
-
-
+    <script src="config.js"></script>
 </head>
 <body style="background-color: #192436;">
     
@@ -18,12 +17,8 @@
     
     <div id="gora">
         <a href="kontakt.html" style="color: white; position: absolute;font-family: 'Courier New', Courier, monospace;">Pomoc/Kontakt</a>
-        
         <img src="icons/logo.jpg" alt="" id="logo">
         <a href="index.html" style="color: white; position: absolute;font-family: 'Courier New', Courier, monospace; ">Darmowa przesyłka/Zwrot produktu</a>
-
-
-
     </div>
     <div id="srodek">
         
@@ -38,24 +33,24 @@
             <li><a href="nowosci.html">Nowości</a></li>
             <li><a href="regulamin.html">Regulamin Zakupów</a></li>
             <li><a href="ubrania.html">Ubrania</a></li>
-            <li></li><a href="Akcesoria.html">Akcesoria</a></li> 
+            <li><a href="Akcesoria.html">Akcesoria</a></li> 
+            <li><a href="koszyk.html"><img src="icons/koszyksklepu2.jpg" alt="" style="width: 15%;"></a></li>
         </ul>
     </div>
     <br>
     <br>
     <br>
-    <button onclick="sortuj(1)">Rosnąco</button>
-    <button onclick="sortuj(2)">Malejąco</button>
+    <button onclick="sortuj(1), refresh()">Rosnąco</button>
+    <button onclick="sortuj(2), refresh()">Malejąco</button>
     <div id="promocje">
         
         <h1 style="color: red;text-align: center;margin-right: 380px;">Wszystko przecenione na -50%<br>________________________________________</h1>
-        <script>pokaz(1)</script>
+        <script>
+            pokaz(4, localStorage.getItem("sort"));
+        </script>
         
 
     </div>
-    
-  <br><br><br><br>
-    <h1>Koszyk</h1>
     
     
 <footer>
