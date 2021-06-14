@@ -55,6 +55,11 @@ function cena()
     document.write('W koszyku znajdują się zakupy za ' + suma + 'zł');
 }
 
+function Esteregg() 
+{
+    alert("Zaraz zostaniesz przeniesiony na tajemnicza strone!");
+}
+
 
 
 
